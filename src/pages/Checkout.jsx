@@ -89,7 +89,7 @@ const Checkout = () => {
             {/* Shipping Info */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
               <h2 className="text-xl font-bold text-slate-900 mb-4">Shipping Information</h2>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <Input 
                   placeholder="First Name" 
                   name="firstName" 
@@ -157,7 +157,7 @@ const Checkout = () => {
                   maxLength={19}
                   required 
                 />
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <Input 
                     placeholder="MM/YY" 
                     name="expiry" 

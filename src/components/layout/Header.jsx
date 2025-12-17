@@ -114,9 +114,8 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-slate-200 bg-white p-4 space-y-4 animate-in slide-in-from-top-4 duration-200">
+        <div className="absolute left-0 right-0 top-16 h-[calc(100vh-4rem)] border-t border-slate-200 bg-white p-4 shadow-lg animate-in slide-in-from-top-4 duration-200 md:hidden overflow-y-auto">
           <form onSubmit={handleSearch} className="flex items-center gap-2">
              <Input
                 type="text"

@@ -11,7 +11,7 @@ const Home = () => {
   const newArrivals = products.slice(4, 8);
 
   const categories = [
-    { name: 'Electronics', image: 'https://images.unsplash.com/photo-1498049860654-af1a5c5668ba?auto=format&fit=crop&q=80&w=500' },
+    { name: 'Electronics', image: 'https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
     { name: 'Fashion', image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=500' },
     { name: 'Home & Garden', image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&q=80&w=500' },
     { name: 'Gaming', image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=500' },
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-12 pb-12">
       {/* Hero Section */}
-      <section className="relative h-[500px] w-full overflow-hidden bg-slate-900">
+      <section className="relative min-h-[500px] w-full overflow-hidden bg-slate-900 py-20 flex items-center">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=2070" 
@@ -35,7 +35,7 @@ const Home = () => {
             className="h-full w-full object-cover opacity-40 mix-blend-overlay"
           />
         </div>
-        <div className="container relative mx-auto flex h-full flex-col justify-center px-4 text-white">
+        <div className="container relative mx-auto flex flex-col justify-center px-4 text-white">
           <span className="mb-4 inline-block max-w-max rounded-full bg-primary-600/20 px-4 py-1.5 text-sm font-semibold text-primary-300 backdrop-blur-sm border border-primary-500/30">
             Winter Collection 2025
           </span>
